@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sophie and Ken's wedding celebration" />
+    <title>Sophie & Ken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#home">S <span>&</span> K</a>
+      <button class="menu" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+      <nav>
+        <a href="#story">Our Story</a><a href="#details">Details</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="wash"></div>
+        <div class="hero-copy reveal">
+          <p>WE'RE GETTING MARRIED</p>
+          <h1>Sophie <em>&</em> Ken</h1>
+          <div class="rule"><span></span><b>06 · 14 · 2025</b><span></span></div>
+          <a class="outline-button" href="#rsvp">SAVE THE DATE</a>
+        </div>
+        <a class="scroll" href="#story">SCROLL <span>↓</span></a>
+      </section>
+
+      <section class="story" id="story">
+        <div class="section-heading reveal"><small>THE BEGINNING OF</small><h2>Our Forever</h2></div>
+        <div class="story-grid">
+          <div class="portrait portrait-a reveal"><div class="photo-text">S</div></div>
+          <div class="story-copy reveal">
+            <div class="flourish">❦</div>
+            <p>Somewhere between our first hello and a thousand little moments, we found home in each other.</p>
+            <p>Now, surrounded by the people we love most, we can't wait to begin our greatest adventure yet.</p>
+            <div class="signature">Sophie & Ken</div>
+          </div>
+          <div class="portrait portrait-b reveal"><div class="photo-text">K</div></div>
+        </div>
+      </section>
+
+      <section class="details" id="details">
+        <div class="details-inner reveal">
+          <small>PLEASE JOIN US</small><h2>The Wedding Day</h2>
+          <p class="date">SATURDAY, THE FOURTEENTH OF JUNE<br><strong>TWO THOUSAND TWENTY-FIVE</strong></p>
+          <div class="event-grid">
+            <article><span class="icon">♢</span><h3>Ceremony</h3><p>FOUR O'CLOCK IN THE AFTERNOON</p></article>
+            <article><span class="icon">⌂</span><h3>The Garden Estate</h3><p>125 ROSEWOOD LANE<br>NAPA VALLEY, CALIFORNIA</p></article>
+            <article><span class="icon">♧</span><h3>Reception</h3><p>DINNER, DANCING & CELEBRATION<br>TO FOLLOW</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="section-heading reveal"><small>A FEW OF OUR</small><h2>Favorite Moments</h2></div>
+        <div class="photo-grid">
+          <div class="memory one reveal"><span>love</span></div><div class="memory two reveal"><span>always</span></div><div class="memory three reveal"><span>us</span></div>
+        </div>
+      </section>
+
+      <section class="rsvp" id="rsvp">
+        <div class="rsvp-card reveal">
+          <small>WE HOPE YOU CAN JOIN US</small><h2>Kindly Respond</h2>
+          <p>Please reply by May 1st, 2025</p>
+          <form><label>Your full name<input required type="text" placeholder="Name"></label><label>Will you be joining us?<select><option>Joyfully accepts</option><option>Regretfully declines</option></select></label><button type="submit">SEND RSVP</button></form>
+          <p class="thanks" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <footer><div class="brand">S <span>&</span> K</div><p>WITH LOVE, SOPHIE & KEN</p><small>06 · 14 · 2025</small></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
