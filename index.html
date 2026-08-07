@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <header class="nav">
       <a class="brand" href="#home">S <span>&</span> K</a>
-      <button class="menu" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
-      <nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false"><i></i><i></i></button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
         <a href="#story">Our Story</a><a href="#details">Details</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a>
       </nav>
     </header>
@@ -68,12 +68,12 @@
         <div class="rsvp-card reveal">
           <small>WE HOPE YOU CAN JOIN US</small><h2>Kindly Respond</h2>
           <p>Please reply by May 1st, 2025</p>
-          <form><label>Your full name<input required type="text" placeholder="Name"></label><label>Will you be joining us?<select><option>Joyfully accepts</option><option>Regretfully declines</option></select></label><button type="submit">SEND RSVP</button></form>
-          <p class="thanks" aria-live="polite"></p>
+          <form><label>Your full name<input required autocomplete="name" type="text" placeholder="Name"></label><label>Will you be joining us?<select name="attendance"><option>Joyfully accepts</option><option>Regretfully declines</option></select></label><button type="submit">SEND RSVP</button></form>
+          <p class="thanks" role="status" aria-live="polite"></p>
         </div>
       </section>
     </main>
     <footer><div class="brand">S <span>&</span> K</div><p>WITH LOVE, SOPHIE & KEN</p><small>06 · 14 · 2025</small></footer>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
